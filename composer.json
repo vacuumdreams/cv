@@ -1,0 +1,14 @@
+{
+    "require": {
+    	"php": ">=5.3.3",
+        "slim/slim": "2.5.*",
+        "slim/logger": "0.1.*",
+        "swiftmailer/swiftmailer": "5.3.*",
+        "j4mie/idiorm": "1.5.*"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"Vacuum\\": "src/vacuum"
+    	}
+    }
+}

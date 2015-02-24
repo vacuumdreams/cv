@@ -1,0 +1,45 @@
+ERROR - 2015-02-23T19:40:13+00:00 - exception 'RuntimeException' with message 'View cannot render `public/index.php` because the template does not exist' in /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/View.php:272
+Stack trace:
+#0 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/View.php(255): Slim\View->render('public/index.ph...', NULL)
+#1 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/View.php(243): Slim\View->fetch('public/index.ph...', NULL)
+#2 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Slim.php(757): Slim\View->display('public/index.ph...')
+#3 /home/vacuum/projects/vacuum/index.php(13): Slim\Slim->render('public/index.ph...')
+#4 [internal function]: {closure}()
+#5 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#6 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Slim.php(1338): Slim\Route->dispatch()
+#7 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#8 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#9 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#10 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Slim.php(1283): Slim\Middleware\PrettyExceptions->call()
+#11 /home/vacuum/projects/vacuum/index.php(16): Slim\Slim->run()
+#12 {main}
+ERROR - 2015-02-23T19:42:18+00:00 - exception 'RuntimeException' with message 'View cannot render `public/index.php` because the template does not exist' in /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/View.php:272
+Stack trace:
+#0 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/View.php(255): Slim\View->render('public/index.ph...', NULL)
+#1 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/View.php(243): Slim\View->fetch('public/index.ph...', NULL)
+#2 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Slim.php(757): Slim\View->display('public/index.ph...')
+#3 /home/vacuum/projects/vacuum/index.php(13): Slim\Slim->render('public/index.ph...')
+#4 [internal function]: {closure}()
+#5 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#6 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Slim.php(1338): Slim\Route->dispatch()
+#7 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#8 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#9 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#10 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Slim.php(1283): Slim\Middleware\PrettyExceptions->call()
+#11 /home/vacuum/projects/vacuum/index.php(16): Slim\Slim->run()
+#12 {main}
+ERROR - 2015-02-23T19:46:25+00:00 - exception 'RuntimeException' with message 'View cannot render `public/index.php` because the template does not exist' in /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/View.php:272
+Stack trace:
+#0 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/View.php(255): Slim\View->render('public/index.ph...', NULL)
+#1 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/View.php(243): Slim\View->fetch('public/index.ph...', NULL)
+#2 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Slim.php(757): Slim\View->display('public/index.ph...')
+#3 /home/vacuum/projects/vacuum/index.php(13): Slim\Slim->render('public/index.ph...')
+#4 [internal function]: {closure}()
+#5 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Route.php(468): call_user_func_array(Object(Closure), Array)
+#6 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Slim.php(1338): Slim\Route->dispatch()
+#7 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#8 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#9 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#10 /home/vacuum/projects/vacuum/vendor/slim/slim/Slim/Slim.php(1283): Slim\Middleware\PrettyExceptions->call()
+#11 /home/vacuum/projects/vacuum/index.php(16): Slim\Slim->run()
+#12 {main}
