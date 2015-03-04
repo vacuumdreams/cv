@@ -700,7 +700,7 @@ var AboutResourceList = Backbone.Collection.extend({
 var AboutResourceView = Backbone.View.extend({	
 	tagName: 'li',
 	className: 'resource',
-  	template: _.template('<div class="<%= name %>"><a href="<%= link %>"><i class="icon-<%= icon %>"></i></a></div>'),
+  	template: _.template('<a href="<%= link %>"><span class="<%= icon %>"><%= name %></span></a>'),
 
 	render: function(){
 		this.$el.html(this.template(this.model.toJSON()));
