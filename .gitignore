@@ -2,4 +2,10 @@ vendor
 app/log/*
 app/cache/*
 app/session/*
-app/public/node_modules
+public/node_modules
+public/bower_components
+public/css/*
+public/js/scripts.js
+public/js/scripts.js.map
+public/js/scripts.min.js
+public/scripts.min.js.map
