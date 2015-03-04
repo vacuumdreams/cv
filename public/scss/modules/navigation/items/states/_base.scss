@@ -1,0 +1,8 @@
+nav li {
+	@import "list_loaded--home";
+	@import "list_loaded--nothome";
+	a {
+		@import "link_loaded--home";
+		@import "link_loaded--nothome";
+	}
+}

@@ -6,7 +6,7 @@ use \Slim\Route as Route;
 
 class Router 
 {
-	$private $routes;
+	private $routes;
 
 	public function __construct(array $routes)
 	{
@@ -15,9 +15,12 @@ class Router
 
 	private function add(array $routes)
 	{
-		foreach($routes as $route => $path){
-			$routeFunction = $this->process($path);
+		foreach($routes as $route => $attrSet){
+			$attrSet = $this->setAttributes($attrSet);
+
+			$routeFunction = $this->process($attrSet);
 			$routeObject = new Route($route, $routeFunction);
+			$routeObject->setHttpMethods(strtoupper($attrSet['method']));
 			array_push($this->routes, $routeObject);
 		}
 
@@ -29,9 +32,13 @@ class Router
 	private function setAttributes($attrSet){
 		$attrKeys = array('path', 'method');
 		if (strpos($attrSet, "@") !== false) {
-            return array_combine($attrKeys, explode("@", $attrSet, 2));
+            $set = array_combine($attrKeys, explode("@", $attrSet, 2));
         } else {
-        	return array_combine($attrKeys, array($attrSet, 'any');
+        	$set = array_combine($attrKeys, array($attrSet, 'any');
+        }
+
+        if (strpos($attrSet, ':') !== false) {
+        	$vars = 
         }
 	}
 

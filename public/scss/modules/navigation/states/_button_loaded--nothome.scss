@@ -1,0 +1,6 @@
+.loaded:not(.home) & {
+	top: -4.75em;
+	padding-top: 2.5em;
+	pointer-events: auto;
+	@include transform(none);
+}

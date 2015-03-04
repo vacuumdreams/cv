@@ -1,0 +1,15 @@
+nav ul {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	position: absolute;
+	font-size: 1.5em;
+	overflow: hidden;
+
+	@include transform-origin(100% 100%);
+	@include transition(all 0.3s ease);
+}

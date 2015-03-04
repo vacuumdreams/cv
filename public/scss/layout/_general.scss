@@ -1,0 +1,15 @@
+* {
+	@include box-sizing(border-box);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: $bodyBg;
+  color: $txtColor;
+  font-family: $genFont;
+}
+

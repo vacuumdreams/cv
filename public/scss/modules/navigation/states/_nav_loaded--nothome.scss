@@ -1,0 +1,3 @@
+.loaded:not(.home) & {
+	@include transform(scale(0.1));
+}

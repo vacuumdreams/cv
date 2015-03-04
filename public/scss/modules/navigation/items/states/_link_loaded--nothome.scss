@@ -1,0 +1,7 @@
+.loaded:not(.home) & {
+	height: 14.5em;
+	width: 14.5em;
+	bottom: -7.25em;
+	right: -7.25em;
+	@include transform(skew(-60deg) rotate(-75deg) scale(1));
+}

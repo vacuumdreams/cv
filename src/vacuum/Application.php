@@ -3,6 +3,7 @@
 namespace Vacuum;
 
 use \Slim\Slim as Slim;
+use \Slim\Extras\Views\Twig as Twig;
 
 class Application extends Slim
 {
@@ -13,7 +14,7 @@ class Application extends Slim
 	{
 		parent::__construct($config);
 
-		$this->routes = $congig['routes'];
+		//$this->router = new \Vacuum\Router($congig['routes']);
 
 		$this->container->singleton('database', function () use ($config) {
 			return new \Vacuum\Database\Database($config['database']);

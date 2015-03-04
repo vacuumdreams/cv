@@ -1,0 +1,5 @@
+.loaded:not(.home) &.open {
+	border-radius: 50%;
+	pointer-events: auto;
+	@include transform(scale(1));
+}

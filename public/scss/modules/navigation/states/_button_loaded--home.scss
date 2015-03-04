@@ -1,0 +1,5 @@
+.loaded.home & {
+	@extend %homeNavOffset;
+	margin-left: -2rem;
+	@include transform(none);
+}

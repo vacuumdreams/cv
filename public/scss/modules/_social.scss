@@ -1,0 +1,17 @@
+.social {
+	list-style: none;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-left: 0;
+	font-size: rem(32);
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		text-decoration: none;
+		color: $socialColor;
+	}
+}

@@ -1,0 +1,36 @@
+.loaded:not(.home) & {
+    width: 10em;
+    height: 10em;
+    left: 50%;
+    top: 50%;
+    margin-top: -1.3em;
+    margin-left: -10em;
+
+    span {
+      @include transform(rotate(180deg));
+    }
+
+    &:nth-child(1) {
+      @include transform(rotate(-30deg) skew(60deg));
+    }
+
+    &:nth-child(2) {
+      @include transform(rotate(-60deg) skew(60deg));
+    }
+
+    &:nth-child(3) {
+      @include transform(rotate(-90deg) skew(60deg));
+    }
+
+    &:nth-child(4) {
+     @include transform(rotate(-120deg) skew(60deg));
+    }
+
+    &:nth-child(5) {
+      @include transform(rotate(-150deg) skew(60deg));
+    }
+
+    &:nth-child(6) {
+      @include transform(rotate(-180deg) skew(60deg));
+    }
+}

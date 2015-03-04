@@ -1,0 +1,28 @@
+.loaded.home & {
+	width: 4rem;
+	height: 4rem;
+
+	&:nth-child(1) {
+		@include transform(translate(14rem));
+	}
+
+	&:nth-child(2) {
+		@include transform(translate(16rem, 5rem));
+	}
+
+	&:nth-child(3) {
+		@include transform(translate(15rem, 10rem));
+	}
+
+	&:nth-child(4) {
+		@include transform(translate(12rem, 15rem));
+	}
+
+	&:nth-child(5) {
+		@include transform(translate(6rem, 18rem));
+	}
+
+	&:nth-child(6) {
+		@include transform(translate(-1rem, 17rem));
+	}
+}

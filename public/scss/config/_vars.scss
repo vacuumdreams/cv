@@ -1,0 +1,40 @@
+
+// FONTS
+$genFont: 'Raleway', sans-serif;
+$hndFont: 'Shadows Into Light', cursive;
+$accFont: 'Bangers', cursive;
+
+//COLORS
+$white: #fff;
+$light: #f2f2f2;
+$lightgrey: #c2c2c2;
+$grey: #787878;
+$darkgrey: #323232;
+$red: #e74c3c;
+
+//general
+$bodyBg: $light;
+$txtColor: $darkgrey;
+
+$themeColor: $red;
+
+//modules
+$overlayBg: rgba($darkgrey, 0.6);
+
+//nav
+$navBg: $white;
+$navColor: $grey;
+$navColorHover: darken($navColor, 10%);
+
+$navItemBg: lighten($lightgrey, 5%);
+$navItemBgOdd: $navItemBg;
+$navItemBgEven: darken($navItemBg, 8%);
+$navItemBgHover: $themeColor;
+$navItemColor: $darkgrey;
+$navItemColorHover: $white;
+
+//social
+$socialColor: $lightgrey;
+
+//DIMENSIONS
+$container: rem(1150);

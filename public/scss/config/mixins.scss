@@ -1,0 +1,10 @@
+/*
+@MIXIN container()
+@param: int 	// max width for element
+@return: max-width as provided in rems, and horizontal margins set to auto
+*/
+@mixin container($max){
+	max-width: rem($max);
+	margin-left: auto;
+	margin-right: auto;
+} 

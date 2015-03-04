@@ -1,0 +1,13 @@
+.brief {
+	font-family: $accFont;
+	background: $themeColor;
+	padding: rem(60);
+	color: $white;
+	font-size: rem(22);
+	text-align: center;
+	& > * {
+		max-width: rem(477);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

@@ -1,0 +1,21 @@
+$overlayBg: rgba(0,0,0,0.6) !default;
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: $overlayBg;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  @include transition(all .3s ease);
+  z-index: 2;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+}

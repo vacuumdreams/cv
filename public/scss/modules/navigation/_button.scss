@@ -1,0 +1,37 @@
+.nav-button {
+    top: 50%;
+    padding-top: 0;
+    pointer-events: none;
+    border: 10px solid #c2c2c2;
+	background: none;
+	background-color: $navBg;
+	color: $navColor;
+	text-align: center;
+	font-family: $hndFont;
+	font-size: 1.8em;
+	height: 9em;
+	width: 9em;
+	position: fixed;
+	left: 50%;
+	margin-left: -4.5em;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 11;
+	outline: none;
+	@include transform(translateY(-50%));
+	@include transition(all 0.5s ease-in-out);
+	
+	&:hover, &:active, &:focus {
+		color: $navColorHover;
+		height: 9.5em;
+		width: 9.5em;
+		margin-left: -4.75em;
+	}
+
+	span {
+		font-family: $genFont;
+		display: block;
+		font-size: 0.5em;
+		letter-spacing: 7px;
+	}
+}

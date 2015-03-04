@@ -1,0 +1,43 @@
+nav li {
+	a {
+		display: block;
+		font-size: 1.18em;
+		position: absolute;
+		border-radius: 50%;
+		text-decoration: none;
+		color: $navItemColor;
+		padding-top: 0.6em;
+		text-align: center;
+		@include backface-visibility(hidden);
+		@include transition(all 0.5s);
+
+		span {
+			display: inline-block;
+			pointer-events: none;
+			font-size: 1.1em;
+			opacity: 0.7;        
+		}
+	}
+
+	&:nth-child(odd) a {
+	  background-color: $navItemBgOdd;
+	}
+
+	&:nth-child(even) a {
+	  background-color: $navItemBgEven;
+	}
+
+	&.active a {
+	  background-color: $navItemBg;
+	}
+
+	&:not(.active) a {
+	  &:hover, &:active, &:focus {
+	    background-color: $navItemBgHover;
+	    color: $navItemColorHover;
+	  }
+	  &:focus {
+	    position: fixed;
+	  }
+	}
+}

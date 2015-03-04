@@ -1,0 +1,13 @@
+.loaded.home & {
+  @include transform(none);
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  left: 0;
+  top: 0;
+  pointer-events: auto;
+  
+  ul {
+    @extend %homeNavOffset;
+  }
+}

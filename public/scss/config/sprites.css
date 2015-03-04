@@ -1,0 +1,95 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-CSStricks {
+  background-image: url(../../img/spritesheet.png);
+  background-position: -218px 0px;
+  width: 218px;
+  height: 148px;
+}
+.icon-codecademy {
+  background-image: url(../../img/spritesheet.png);
+  background-position: -218px -296px;
+  width: 218px;
+  height: 148px;
+}
+.icon-codeschool {
+  background-image: url(../../img/spritesheet.png);
+  background-position: 0px -148px;
+  width: 218px;
+  height: 148px;
+}
+.icon-codrops {
+  background-image: url(../../img/spritesheet.png);
+  background-position: -218px -148px;
+  width: 218px;
+  height: 148px;
+}
+.icon-creativebloq {
+  background-image: url(../../img/spritesheet.png);
+  background-position: -436px 0px;
+  width: 218px;
+  height: 148px;
+}
+.icon-edX {
+  background-image: url(../../img/spritesheet.png);
+  background-position: -436px -148px;
+  width: 218px;
+  height: 148px;
+}
+.icon-laracast {
+  background-image: url(../../img/spritesheet.png);
+  background-position: 0px -296px;
+  width: 218px;
+  height: 148px;
+}
+.icon-phptherightway {
+  background-image: url(../../img/spritesheet.png);
+  background-position: 0px 0px;
+  width: 218px;
+  height: 148px;
+}
+.icon-sitepoint {
+  background-image: url(../../img/spritesheet.png);
+  background-position: -436px -296px;
+  width: 218px;
+  height: 148px;
+}
+.icon-stackoverflow {
+  background-image: url(../../img/spritesheet.png);
+  background-position: 0px -444px;
+  width: 218px;
+  height: 148px;
+}
+.icon-treehouse {
+  background-image: url(../../img/spritesheet.png);
+  background-position: -218px -444px;
+  width: 218px;
+  height: 148px;
+}
+.icon-tutsplus {
+  background-image: url(../../img/spritesheet.png);
+  background-position: -436px -444px;
+  width: 218px;
+  height: 148px;
+}
+.icon-udacity {
+  background-image: url(../../img/spritesheet.png);
+  background-position: -654px 0px;
+  width: 218px;
+  height: 148px;
+}
+.icon-udemy {
+  background-image: url(../../img/spritesheet.png);
+  background-position: -654px -148px;
+  width: 218px;
+  height: 148px;
+}

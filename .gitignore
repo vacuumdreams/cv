@@ -1,1 +1,5 @@
-vendor/
+vendor
+app/log/*
+app/cache/*
+app/session/*
+app/public/node_modules
