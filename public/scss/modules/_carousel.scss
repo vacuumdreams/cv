@@ -1,0 +1,12 @@
+.resources {
+	padding: 0;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		text-indent: -9999px;
+		* {
+			display: block;
+		}
+	}
+}

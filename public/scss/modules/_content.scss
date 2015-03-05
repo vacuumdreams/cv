@@ -1,0 +1,7 @@
+.content {
+	padding: rem(30);
+	text-align: center;
+	& > * {
+		@include container(477);
+	}
+}
