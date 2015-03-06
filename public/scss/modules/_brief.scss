@@ -6,8 +6,6 @@
 	font-size: rem(22);
 	text-align: center;
 	& > * {
-		max-width: rem(477);
-		margin-left: auto;
-		margin-right: auto;
+		@include container(477);
 	}
 }

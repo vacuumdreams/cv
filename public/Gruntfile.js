@@ -12,10 +12,7 @@ module.exports = function(grunt) {
         		outputFile: "js/src/vendor/modernizr/modernizr.js",
         		parseFiles: false,
         		files: {
-        			src: [
-        				"css/style.scss",
-        				//"js/src/vendor/circularnav/*.js"
-        			]
+        			src: ["css/style.scss"]
         		},
         		uglify: false
         	}
@@ -49,7 +46,9 @@ module.exports = function(grunt) {
 				files: [
 					{expand: true, cwd: 'bower_components/jquery/dist/', src: ['jquery.js'], dest: 'js/src/vendor/jquery/', filter: 'isFile'},
 					{expand: true, cwd: 'bower_components/lodash/', src: ['lodash.js'], dest: 'js/src/vendor/lodash/', filter: 'isFile'},
-					{expand: true, cwd: 'bower_components/backbone/', src: ['backbone.js'], dest: 'js/src/vendor/backbone/', filter: 'isFile'}
+					{expand: true, cwd: 'bower_components/backbone/', src: ['backbone.js'], dest: 'js/src/vendor/backbone/', filter: 'isFile'},
+					{expand: true, cwd: 'bower_components/owl.carousel/dist/', src: ['owl.carousel.js'], dest: 'js/src/vendor/owl.carousel/', filter: 'isFile'},
+					{expand: true, cwd: 'bower_components/owl.carousel/dist/assets/', src: ['owl.carousel.css', 'owl.theme.default.css'], dest: 'scss/vendor/owl.carousel/', filter: 'isFile'}
 				]
 			}
 		},
@@ -64,9 +63,10 @@ module.exports = function(grunt) {
 					'js/src/vendor/jquery/jquery.js',
 					'js/src/vendor/lodash/lodash.js',
 					'js/src/vendor/backbone/backbone.js',
-					//'js/src/vendor/circularnav/polyfills.js',
-					//'js/src/vendor/circularnav/circularNav.js',
-					'js/src/app/**/*.js'
+					'js/src/vendor/owl.carousel/owl.carousel.js',
+
+					'js/src/app/data.js',
+					'js/src/app/app.js'
 				],
 				dest: 'js/scripts.js'
 			}

@@ -1,867 +1,67 @@
-var data = {
-				main: function(){ return {
-					name: 'botond fekete',
-					title: 'my resume',
-					dob: '11/28/1987',
-					photo: 'botond-fekete.jpg',
-					contact: {
-						phone: '07778 300 930',
-						mail: 'fekbot@gmail.com'
-					},
-					social: {
-						facebook: 'http://facebook.com/vacuumdreamz',
-						linkedin: 'http://linkedin.com/in/botondfekete',
-						github: 'http://github.com/vacuumdreams'
-					},
-					pages: [
-						{
-							name: 'home',
-							route: ''
-						},
-						{
-							name: 'about',
-							route: 'about'
-						},
-						{
-							name: 'timeline',
-							route: 'timeline'
-						},
-						{
-							name: 'skills',
-							route: 'skills'
-						},
-						{
-							name: 'portfolio',
-							route: 'portfolio'
-						},
-						{
-							name: 'contact',
-							route: 'contact'
-						}
-					]
-				};},
-				about: {
-					content: {
-						brief: "I tend to be super-enthusiastic about what i do. I consider myself a maximalist, I’m always seeking the best way to achive the most. i'm a fast learner, positive, hardworking, and some say even funny.",
-						start: "I've started teaching myself web development in 2013, using mainly online resources, tutorials, books and articles. I think after all I can say that I'm grateful for living in the 21th century, where we have all this exceptionally amount of quality resources to learn from. Brief list of communities, platforms made my journey into programming a hell of a journey:",
-						future: 'I’m into RESTful technologies lately, my current favorite is Backbone, I’m planning on using it more often.\n\nI’d love to learn more about Ruby on Rails and Node.js, and maybe Django, too.'
-					},
-					resourcelist: [
-						{
-							name: 'Treehouse',
-							link: 'http://teamtreehouse.com/botondfekete',
-							icon: 'treehouse'
-						},
-						{
-							name: 'CodeSchool',
-							link: 'https://www.codeschool.com/users/662115',
-							icon: 'codeschool'
-						},
-						{
-							name: 'CodeAcademy',
-							link: 'http://www.codecademy.com/betaMaster01735',
-							icon: 'codeacademy'
-						},
-						{
-							name: 'Laracast',
-							link: 'https://laracasts.com/@vacuum',
-							icon: 'laracast'
-						},
-						{
-							name: 'TutsPlus',
-							link: 'http://tutsplus.com/',
-							icon: 'tutsplus'
-						},
-						{
-							name: 'Udacity',
-							link: 'https://www.udacity.com/',
-							icon: 'udacity'
-						},
-						{
-							name: 'StackOverFlow',
-							link: 'http://stackoverflow.com/',
-							icon: 'stackoverflow'
-						},
-						{
-							name: 'Sitepoint',
-							link: 'http://www.sitepoint.com/',
-							icon: 'sitepoint'
-						},
-						{
-							name: 'Codrops',
-							link: 'http://tympanus.net/codrops/',
-							icon: 'codrops'
-						},						
-						{
-							name: 'CSS-Tricks',
-							link: 'http://css-tricks.com/',
-							icon: 'csstricks'
-						},
-						{
-							name: 'CreativeBloq',
-							link: 'http://www.creativebloq.com/',
-							icon: 'creativebloq'
-						},
-						{
-							name: 'PHPTheRightWay',
-							link: 'http://www.phptherightway.com/',
-							icon: 'phptherightway'
-						},
-						{
-							name: 'edX',
-							link: 'https://www.edx.org/',
-							icon: 'edx'
-						},
-						{
-							name: 'Coursera',
-							link: 'https://www.coursera.org/',
-							icon: 'coursera'
-						},
-						{
-							name: 'Udemy',
-							link: 'https://www.udemy.com/',
-							icon: 'udemy'
-						}
-					],
-					hobbylist: [
-						{
-							name: 'web programming',
-							icons: ['programming'],
-							description: 'couldn’t be more grateful having work on the first place'
-						},
-						{
-							name: 'analog photography',
-							icons: ['camera'],
-							description: 'because storing sunlight on a film is fun'
-						},
-						{
-							name: 'snowboarding, riding a bike, table tennis, yoga',
-							icons: ['snowboard', 'bike', 'tabletennis', 'yoga'],
-							description: 'because we also need to stay in shape'
-						},
-						{
-							name: 'playing on a guitar',
-							icons: ['guitar'],
-							description: 'because we all need music'
-						},
-						{
-							name: 'chess, reading',
-							icons: ['chess', 'read'],
-							description: 'because there is nothing better then relaxing and being active in the same time'
-						}
-					],
-				},
-				studylist: function(){ return {
-					highschool: {
-						dateFrom: '2002',
-						dateTo: '2006',
-						institution: 'Bod Peter High School',
-						subject: 'math-informatics',
-						link: 'http://www.bodpetertk.ro/'
-					},
-					university: {
-						dateFrom: '2006',
-						dateTo: '2009',
-						institution: 'University of Debrecen',
-						subject: 'environmental geography (unfinished)',
-						link: 'http://unideb.hu/'			
-					}
-				};},
-				worklist: function(){ return [
-					{
-						dateFrom: '02/2010',
-						dateTo: '08/2010',
-						job: 'receptionist',
-						company: 'Best Western Grand Hotel Balvanyos',
-						location: 'Transylvania, Romania',
-						link: 'http://www.hotelbalvanyos.ro/',
-						description: ''
-					},
-					{
-						dateFrom: '09/2010',
-						dateTo: '11/2010',
-						job: 'back office agent',
-						company: 'CGS Brasov',
-						location: 'Brasov, Romania',
-						link: 'http://www.cgscontactcenter.com/',
-						description: ''
-					},
-					{
-						dateFrom: '11/2010',
-						dateTo: '04/2012',
-						job: 'helpdesk and support agent',
-						company: 'Dotroll Ltd',
-						location: 'Budapest, Hungary',
-						link: 'https://hu.dotroll.com/',
-						description: ''
-					},
-					{
-						dateFrom: '05/2012',
-						dateTo: '01/2013',
-						job: 'warehouse operator',
-						company: 'Marks and Spencer',
-						location: 'Warrington, UK',
-						link: 'http://www.marksandspencer.com/',
-						description: ''
-					},
-					{
-						dateFrom: '03/2013',
-						dateTo: '11/2013',
-						job: 'catering assistant',
-						company: 'Woodlands Leisure Park',
-						location: 'South Devon, UK',
-						link: 'http://www.woodlandspark.com/',
-						description: ''
-					},
-					{
-						dateFrom: '11/2013',
-						dateTo: '05/2014',
-						job: 'freelance web developer',
-						company: 'Pro*Curator Digital Marketing Services',
-						location: 'Warrington, UK',
-						link: 'http://pro-curator.com/',
-						description: 'installing, deploying and migrating Wordpress sites, creating new themes, content management',
-						technologies: ['HTML, SVG, CSS, SASS, JavaScript, PHP, MySQL, NPM, Grunt, Gulp, Bourbon, Compass, jQuery, Git, Drupal, Magento']
-					},
-					{
-						dateFrom: '06/2014',
-						dateTo: 'present',
-						job: 'senior front end developer',
-						company: 'EMS Internet',
-						location: 'Warrington, UK',
-						link: 'http://ems-internet.co.uk/',
-						description: 'developing custom websites (front end) on Drupal, Magento, creating base theme architectures, helping junior designers',
-						technologies: ['HTML, CSS, SASS, JavaScript, PHP, MySQL, Compass, jQuery, Wordpress']
-					}
-				];},
-				skilltags: function(){ return {
-					front: {
-						name: 'front-end',
-						icon: 'frontend'
-					},
-					back: {
-						name: 'back-end',
-						icon: 'backend'
-					},
-					markup: {
-						name: 'markups',
-						icon: 'markup'
-					},
-					lang: {
-						name: 'languages',
-						icon: 'language'
-					},
-					lib: {
-						name: 'libraries',
-						icon: 'library'
-					},
-					fw: {
-						name: 'frameworks',
-						icon: 'framework'
-					},
-					tpl: {
-						name: 'template engines',
-						icon: 'template'
-					},
-					tool: {
-						name: 'tools, workflow',
-						icon: 'tool'
-					},
-					vc: {
-						name: 'version control',
-						icon: 'versioncontrol'
-					},
-					db: {
-						name: 'databases',
-						icon: 'database'
-					},
-					cms: {
-						name: 'cms',
-						icon: 'cms'
-					},
-					server: {
-						name: 'server environments',
-						icon: 'server'
-					},
-					soft: {
-						name: 'softwares',
-						icon: 'software'
-					},
-					os: {
-						name: 'operation systems',
-						icon: 'system'
-					},
-					php: {
-						name: 'php',
-						icon: 'php' 
-					},
-					js: {
-						name: 'javascript',
-						icon: 'javascript'
-					},
-					css: {
-						name: 'css',
-						icon: 'css'
-					}
-				};},
-				skillist: function(){ return {
-					html: {
-						name: 'HTML',
-						icon: 'html',
-						tags: ['markup']
-					},
-					svg: {
-						name: 'SVG',
-						icon: 'svg',
-						tags: ['markup']
-					},
-					xml: {
-						name: 'XML',
-						icon: 'xml',
-						tags: ['markup']
-					},
-					json: {
-						name: 'jSON',
-						icon: 'json',
-						tags: ['markup', 'js']
-					},
-					css: {
-						name: 'CSS',
-						icon: 'css',
-						tags: ['front', 'markup', 'css']
-					},
-					sass: {
-						name: 'SASS',
-						icon: 'sass',
-						tags: ['front', 'lang', 'css']
-					},
-					less: {
-						name: 'LESS',
-						icon: 'less',
-						tags: ['front', 'lang', 'css']
-					},
-					js: {
-						name: 'JavaScript',
-						icon: 'javascript',
-						tags: ['front', 'back', 'lang', 'js']
-					},
-					php: {
-						name: 'PHP',
-						icon: 'php',
-						tags: ['back', 'lang', 'php']
-					},
-					python: {
-						name: 'Python',
-						icon: 'python',
-						tags: ['back', 'lang']
-					},
-					bourbon: {
-						name: 'Bourbon',
-						icon: 'bourbon',
-						tags: ['front', 'lib', 'css']
-					},
-					compass: {
-						name: 'Compass',
-						icon: 'compass',
-						tags: ['front', 'lib', 'css']
-					},
-					jquery: {
-						name: 'jQuery',
-						icon: 'jquery',
-						tags: ['front', 'lib', 'js']
-					},
-					bootstrap: {
-						name: 'Bootstrap',
-						icon: 'bootstrap',
-						tags: ['front', 'fw', 'css']
-					},
-					foundation: {
-						name: 'Foundation',
-						icon: 'foundation',
-						tags: ['front', 'css', 'js', 'fw']
-					},
-					backbone: {
-						name: 'Backbone',
-						icon: 'backbone',
-						tags: ['front', 'js', 'fw']
-					},
-					slim: {
-						name: 'Slim',
-						icon: 'slim',
-						tags: ['back', 'php', 'fw']
-					},
-					silex: {
-						name: 'Silex',
-						icon: 'sliex',
-						tags: ['back', 'php', 'fw']
-					},
-					laravel: {
-						name: 'Laravel',
-						icon: 'laravel',
-						tags: ['back', 'php', 'fw']
-					},
-					smarty: {
-						name: 'Smarty',
-						icon: 'smarty',
-						tags: ['back', 'php', 'tpl']
-					},
-					twig: {
-						name: 'Twig',
-						icon: 'twig',
-						tags: ['back', 'php', 'tpl']
-					},
-					blade: {
-						name: 'Blade',
-						icon: 'blade',
-						tags: ['back', 'php', 'tpl']
-					},
-					underscore: {
-						name: 'Underscore',
-						icon: 'underscore',
-						tags: ['front', 'js', 'tpl']
-					},
-					lodash: {
-						name: 'Lodash',
-						icon: 'lodash',
-						tags: ['front', 'js', 'tpl']
-					},
-					handlebars: {
-						name: 'Handlebars',
-						icon: 'handlebars',
-						tags: ['front', 'js', 'tpl']
-					},
-					mustache: {
-						name: 'Mustache',
-						icon: 'mustache',
-						tags: ['front', 'js', 'tpl']
-					},
-					npm: {
-						name: 'NPM',
-						icon: 'npm',
-						tags: ['js', 'tool']
-					},
-					bower: {
-						name: 'Bower',
-						icon: 'bower',
-						tags: ['front', 'js', 'tool']
-					},
-					grunt: {
-						name: 'Grunt',
-						icon: 'grunt',
-						tags: ['front', 'js', 'tool']
-					},
-					gulp: {
-						name: 'Gulp',
-						icon: 'gulp',
-						tags: ['front', 'js', 'tool']
-					},
-					composer: {
-						name: 'Composer',
-						icon: 'composer',
-						tags: ['back', 'php', 'tool']
-					},
-					vagrant: {
-						name: 'Vagrant',
-						icon: 'vagrant',
-						tags: ['back', 'tool']
-					},
-					git: {
-						name: 'Git',
-						icon: 'git',
-						tags: ['vc', 'tool']
-					},
-					svn: {
-						name: 'SVN',
-						icon: 'svn',
-						tags: ['vc', 'tool']
-					},
-					mysql: {
-						name: 'MySQL',
-						icon: 'mysql',
-						tags: ['back', 'db']
-					},
-					sqlite: {
-						name: 'SQLite',
-						icon: 'sqlite',
-						tags: ['back', 'db']
-					},
-					drupal: {
-						name: 'Drupal',
-						icon: 'drupal',
-						tags: ['front', 'cms', 'php']
-					},
-					wp: {
-						name: 'Wordpress',
-						icon: 'wordpress',
-						tags: ['front', 'cms', 'php']
-					},
-					magento: {
-						name: 'Magento',
-						icon: 'magento',
-						tags: ['front', 'cms', 'php']
-					},
-					pagekit: {
-						name: 'PageKit',
-						icon: 'pagekit',
-						tags: ['front', 'cms', 'php']
-					},
-					ghost: {
-						name: 'Ghost',
-						icon: 'ghost',
-						tags: ['front', 'cms', 'js']
-					},
-					apache: {
-						name: 'Apache',
-						icon: 'apache',
-						tags: ['back', 'server']
-					},
-					nginx: {
-						name: 'Nginx',
-						icon: 'nginx',
-						tags: ['back', 'server']
-					},
-					ps: {
-						name: 'Photoshop',
-						icon: 'photoshop',
-						tags: ['soft']
-					},
-					ai: {
-						name: 'Illustrator',
-						icon: 'illustrator',
-						tags: ['soft']
-					},
-					office: {
-						name: 'Office',
-						icon: 'office',
-						tags: ['soft']
-					},
-					windows: {
-						name: 'Windows',
-						icon: 'windows',
-						tags: ['soft', 'os']
-					},
-					ubuntu: {
-						name: 'Ubuntu',
-						icon: 'ubuntu',
-						tags: ['soft', 'os']
-					}
-				};},
-				skillset: function(){ return {
-					languages: [
-						{
-							type: 'native',
-							value: 'hungarian'
-						},
-						{
-							type: 'advanced',
-							value: 'english, romanian'
-						},
-						{
-							type: 'basic',
-							value: 'spanish, german'
-						}
-					],
-					computing: [
-						{
-							type: 'markups, languages',
-							value: []
-						},
-						{
-							type: 'libraries',
-							value: []
-						},
-						{
-							type: 'frameworks',
-							value: []
-						},
-						{
-							type: 'template engines',
-							value: []
-						},
-						{
-							type: 'tools, workflow',
-							value: []
-						},
-						{
-							type: 'version control',
-							value: []
-						},
-						{
-							type: 'database',
-							value: []
-						},
-						{
-							type: 'cms',
-							value: []
-						},
-						{
-							type: 'server environment',
-							value: []
-						},
-						{
-							type: 'technologies, patterns',
-							value: []
-						},
-						{
-							type: 'softwares',
-							value: []
-						}
-					]
-				};},
-				portfolioList: function(){ return [
-					{
-						name: 'Hall of Fame Plaques',
-						description: '',
-						image: '',
-						link: 'http://halloffameplaques.com/',
-						tags: ['html', 'php', 'js', 'css', 'drupal', 'sass', 'bourbon', 'jquery', 'foundation', 'npm', 'grunt', 'git', 'mysql', 'nginx']
-					},
-					{
-						name: 'Jennyfields',
-						description: '',
-						image: '',
-						link: 'http://jennyfields.emsinternet.net/',
-						tags: ['html', 'php', 'js', 'css', 'drupal', 'sass', 'compass', 'jquery', 'foundation', 'npm', 'grunt', 'git', 'mysql', 'nginx']
-					},
-					{
-						name: 'EMS Fifteen',
-						description: '',
-						image: '',
-						link: 'http://ems15.co.uk/',
-						tags: ['html', 'php', 'js', 'css', 'drupal', 'sass', 'compass', 'jquery', 'foundation', 'npm', 'grunt', 'git', 'mysql', 'nginx']
-					},
-					{
-						name: 'Onyx PR',
-						description: '',
-						image: '',
-						link: 'http://onyx.emsinternet.net/',
-						tags: ['html', 'svg', 'php', 'js', 'css', 'svg', 'drupal', 'sass', 'compass', 'jquery', 'foundation', 'npm', 'grunt', 'git', 'mysql', 'nginx']
-					},
-					{
-						name: 'All Your Protein',
-						description: '',
-						image: '',
-						link: 'http://allyourprotein.co.uk/',
-						tags: ['html', 'php', 'js', 'css', 'magento', 'jquery', 'foundation', 'git', 'mysql', 'nginx']
-					},
-					{
-						name: 'Standish Computers and Inks',
-						description: '',
-						image: '',
-						link: 'http://www.standishcomputersandinksshop.co.uk/',
-						tags: ['html', 'php', 'js', 'css', 'magento', 'sass', 'bourbon', 'jquery', 'foundation', 'npm', 'grunt', 'git', 'mysql', 'nginx']
-					},
-					{
-						name: 'TP Textiles',
-						description: '',
-						image: '',
-						link: 'http://proof.tptextiles.co.uk/',
-						tags: ['html', 'svg', 'php', 'js', 'css', 'magento', 'sass', 'bourbon', 'jquery', 'foundation', 'npm', 'grunt', 'git', 'mysql', 'nginx']
-					},
-					{
-						name: 'Neutronic Technologies',
-						description: '',
-						image: '',
-						link: 'http://proof.neutronic.org/',
-						tags: ['html', 'php', 'js', 'css', 'magento', 'sass', 'bourbon', 'jquery', 'foundation', 'npm', 'gulp', 'git', 'mysql', 'nginx']
-					}
-				];}
-
-		};
-
-
-// about - CONTENT
-var AboutContent = Backbone.Model.extend({
-	urlRoot: '/about'
+//***************
+// main
+// for displaying current page - swapping content inside the <main>
+var MainView = Backbone.View.extend({
+	show: function(view){
+		this.$view.remove();
+        this.$view = view;
+        this.$el.html(this.$view.render().$el);
+	}
 });
 
-var AboutContentView = Backbone.View.extend({
+//***************
+// header & navigation
+var Header = Backbone.Model.extend({});
+// var NavList = Backbone.Collection.extend({
+// 	model: NavItem,
+// });
+
+var HeaderView = Backbone.View.extend({
+
+	template: _.template('<button class="nav-button"><%= name %><span><%= title %></span></button><nav><ul><% _.each(pages, function(page){ %><li><a href="/<%= page.route %>"><span class="icon-<%= page.name %>"></span></a></li><%})%></ul></nav>'),
 	
-  template: _.template('<section class="brief"><p><%= brief %></p></section><div><div><%= start %></div><div class="content"><%= future %></div></div>'),
+	initialize: function(){
+		this.$el.append(this.render().$el);
+		return this;
+	},
 
-  initialize: function(){
-  	this.$el.append(this.render().$el);
-  },
+	render: function(){
+		this.$el.html(this.template(this.model.toJSON()));
+		this.$el.on('load', this.onLoad());
+		return this;
+	},
 
-  render: function(){
-    this.$el.html(this.template(this.model.toJSON()));
-    return this;
-  }
+	onLoad : function () {
+	    console.log('onLoad');
+	}
 
 });
 
-// about - RESOURCES 
-var AboutResource = Backbone.Model.extend({});
-var AboutResourceList = Backbone.Collection.extend({
-	model: AboutResource,
+//***************
+// about
+var About = Backbone.Model.extend({
 	urlRoot: '/about'
 });
 
-var AboutResourceView = Backbone.View.extend({	
-	tagName: 'li',
-	className: 'resource',
-  	template: _.template('<a href="<%= link %>"><span class="<%= icon %>"><%= name %></span></a>'),
+var AboutView = Backbone.View.extend({
+	
+	template: _.template('<section class="brief"><p><%= brief %></p></section><div class="content"><p><%= start %></p></div><ul class="resources"><% _.each(resourcelist, function(resource){ %><li><a href="<%= resource.link %>"><span class="<%= resource.icon %>"></span></a></li><% }) %></ul><div class="content"><p><%= future %></p></div>'),
+
+	initialize: function(){
+		this.$el.append(this.render().$el);
+		return this;
+	},
 
 	render: function(){
 		this.$el.html(this.template(this.model.toJSON()));
-		return this;
- 	}
-
-});
-
-var AboutResourceListView = Backbone.View.extend({
-	tagName: 'ul',
-	initialize: function(){
-		this.collection.on('add', this.addOne, this);
-		this.collection.on('reset', this.addAll, this);
-	},
-
-	render: function(){
-		this.addAll();
+		this.$el.on('load', this.onLoad());
 		return this;
 	},
 
-	addAll: function(){
-		this.$el.empty();
-		this.collection.forEach(this.addOne, this);
-	},
-
-	addOne: function(aboutResource){
-		var resourceView = new AboutResourceView({ model: aboutResource });
-		this.$el.append(resourceView.render().el);
-	}
-});
-
-// studies
-var Study = Backbone.Model.extend({});
-
-var StudyView = Backbone.View.extend({
-
-  template: _.template('<h3><%= name %></h3><img src="<%= url %>" alt="<%= name %>" width="200" height="200">'),
-
-  render: function(){
-    this.$el.html(this.template(this.model.toJSON()));
-    return this;
-  }
-
-});
-
-var StudyList = Backbone.Collection.extend({
-	model: Study,
-	url: '/studies'
-});
-
-var StudyListView = Backbone.View.extend({
-
-  initialize: function(){
-    this.collection.on('add', this.addOne, this);
-    this.collection.on('reset', this.addAll, this);
-  },
-
-  render: function(){
-    this.addAll();
-    return this;
-  },
-
-  addAll: function(){
-    this.$el.empty();
-    this.collection.forEach(this.addOne, this);
-  },
- 
-  addOne: function(photoModel){
-    var studyView = new StudyView({ model: Study });
-    this.$el.append(studyView.render().el);
-  }
-
-});
-
-//***************
-// work
-var Work = Backbone.Model.extend({});
-var WorkList = Backbone.Collection.extend({
-	model: Work,
-	url: '/work'
-});
-
-//***************
-// tags
-var Tag = Backbone.Model.extend({});
-var TagList = Backbone.Collection.extend({
-	model: Tag
-});
-
-//***************
-// skills
-var Skill = Backbone.Model.extend({});
-var SkillList = Backbone.Collection.extend({
-	model: Skill,
-	url: '/skills'
-});
-
-//***************
-// skillsets
-var Skillset = Backbone.Model.extend({});
-var SkillsetList = Backbone.Collection.extend({
-	model: Skillset,
-	url: '/skills'
-});
-
-//***************
-// hobbies
-var Hobby = Backbone.Model.extend({});
-var HobbyList = Backbone.Collection.extend({
-	model: Hobby,
-	url: '/hobbies'
-});
-
-//***************
-// portfolio
-var PortfolioItem = Backbone.Model.extend({});
-var PortfolioList = Backbone.Collection.extend({
-	model: PortfolioItem,
-	url: '/portfolio'
-});
-
-//***************
-// navigation
-var NavItem = Backbone.Model.extend({});
-var NavList = Backbone.Collection.extend({
-	model: NavItem,
-});
-
-var NavView = Backbone.View.extend({
-	tagName: 'li',
-	template: _.template('<a href="/<%= route %>"><span class="icon-<%= name %>"></span></a>'),
-
-	render: function(){
-		this.$el.html(this.template(this.model.toJSON()));
-		return this;
+	onLoad : function () {
+	    console.log('onLoad');
 	}
 
-});
-
-var NavListView = Backbone.View.extend({
-	tagName: 'ul',
-
-	initialize: function(){
-		this.collection.on('add', this.addOne, this);
-		this.collection.on('reset', this.addAll, this);
-	},
-
-	render: function(){
-		this.addAll();
-		return this;
-	},
-
-	addAll: function(){
-		this.$el.empty();
-		this.collection.forEach(this.addOne, this);
-	},
-
-	addOne: function(NavItem){
-		var navView = new NavView({ model: NavItem });
-		this.$el.append(navView.render().el);
-	}
 });
 
 //***************
@@ -870,12 +70,11 @@ var NavListView = Backbone.View.extend({
 $(function() {
 	var App = new (Backbone.View.extend({
 
-		template: _.template('<header><button class="nav-button"><%= name %><span><%= title %></span></button><nav></nav></header><main></main><footer></footer>'),
+		template: _.template('<header></header><main></main><footer></footer>'),
 
 		events: {
 			'click nav a': function(e){
 				e.preventDefault();
-				console.log(e.target.pathname);
 				Backbone.history.navigate(e.target.pathname, {trigger: true});
 			},
 			'click .nav-button': function(){
@@ -886,21 +85,20 @@ $(function() {
 		initialize: function(){
 			var app = this;
 
-			// this.main = new Main(data.main());
-			// this.mainView = new MainView({ model: this.main });
-			
-			app.nav = new NavList(data.main().pages);
-			app.navView = new NavListView({ collection: app.nav });
-
 			$(document).ready(function(){
 				app.$el.append(app.render().$el);
-				$('nav').append(app.navView.render().$el);
+
+				app.main = new MainView();
+				app.header = new HeaderView({ model: new Header(data.main()), el: $('header') });
+
+				$('header').append(app.header.render().$el);				
 			});
+
 			
 		},
 
 		render: function(){
-			this.$el.html(this.template(data.main()));
+			this.$el.html(this.template());
 			return this;
 		},
 
@@ -920,28 +118,19 @@ $(function() {
 			},
 
 			home: function(){
-				console.log('hey');
-
-				$(document).ready(function(){
-					$('body').addClass('home');
-					$('nav, .overlay').removeClass('open');
-					$('main').empty();
-				});
-
+				$('body').addClass('home');
+				$('nav, .overlay').removeClass('open');
+				$('main').empty();
 			},
 
 			about: function(){
 				console.log('about');
+				//this.loader();
 
-				var aboutContent = new AboutContent(data.about.content);
-				var aboutContentView = new AboutContentView({ model: aboutContent, el: $('main') });
-
-				var aboutResources = new AboutResourceList(data.about.resourcelist);
-				var aboutResourcesView = new AboutResourceListView({ collection: aboutResources });
+				var aboutView = new AboutView({ model: new About(data.about), el: $('main') });
 
 				$('body').removeClass('home');
-				$('footer').before(aboutContentView.render().$el);
-				$('main').append(aboutResourcesView.render().$el);
+				$('footer').before(aboutView.render().$el);
 
 			},
 
